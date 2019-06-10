@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Effects on gallery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <style>
+            .images{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="Desert.jpg" alt="" height="300px" width="300px" class="images">
+        <img src="Koala.jpg" alt="" height="300px" width="300px" class="images">
+        <img src="Jellyfish.jpg" alt="" height="300px" width="300px" class="images">
+        <img src="Hydrangeas.jpg" alt="" height="300px" width="300px" class="images">
+        <img src="Penguins.jpg" alt="" height="300px" width="300px" class="images">
+        <img src="Lighthouse.jpg" alt="" height="300px" width="300px" class="images">
+
+        <span id="show" style="font-size: 20px; color: red; cursor: pointer; " onclick="myfunction()">Click me >></span>
+
+        <script>
+            $(function(){
+                $("#show").click(function(){
+                 $("img").toggle(500);
+                });
+            });
+        </script>
+    </body>
+</html>
