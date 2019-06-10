@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>First jQuery Program</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>jQuery Program</h1>
+        <p>First program using jQuery</p>
+        <img src="Desert.jpg" alt="" height="300px" width="300px">
+        
+        <button id="toggle">Toggle</button>
+        <script>
+            $(document).ready(function(){
+               $("#hide").click(function(){
+                     $("img").hide();
+                 });
+                 $("#show").click(function(){
+                     $("img").show();
+            });
+                $("#toggle").click(function(){
+                    $("img").toggle();
+                });
+            });
+        </script>
+        
+        
+    </body>
+</html>
