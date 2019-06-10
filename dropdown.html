@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Effects on gallery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <style> 
+        #dropdown{
+            display: none;
+        }
+    </style>
+    <body>
+        <div id="main">Click Me</div>
+        <div id="dropdown"><ul>
+            <li>India</li>
+            <li>Australia</li>
+            <li>Japan</li>
+            <li>Korea</li>
+        </ul></div>
+        <script>
+            $(function(){
+               $("#main").hover(function(){
+                   $("#dropdown").fadeToggle(500);
+               });
+               $("#dropdown").hover(function(){
+                   $("#dropdown").fadeToggle(500);
+               });
+            });
+        </script>
+
+    </body>
